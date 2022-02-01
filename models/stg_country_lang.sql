@@ -1,6 +1,6 @@
 select
-    CountryCode as Code,
-    'Language',
-    IsOfficial
+    countrycode as code,
+    "Language",
+    isofficial
 
 from sample.world.countrylanguage

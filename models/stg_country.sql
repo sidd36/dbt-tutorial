@@ -1,5 +1,5 @@
 select
-    'Name' as Country,
-    Code
+    "Name" as Country,
+    code
 
 from sample.world.country

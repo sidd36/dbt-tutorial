@@ -13,9 +13,9 @@ country_lang as (
 country_official_lang as (
 
     select
-        Code,
-        'Language',
-        IsOfficial
+        code,
+        "Language",
+        isofficial
 
     from country_lang
 
@@ -27,12 +27,13 @@ country_official_lang as (
 final as (
 
     select
-        country.Country,
-        country.Code
+        c.Country,
+        c.code,
+        col."Language"
 
-    from country
+    from country c
 
-    left join country_official_lang using (Code)
+    left join country_official_lang col on c.code = col.code
 
 )
 
