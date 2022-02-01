@@ -33,5 +33,3 @@ models:
   sample:
     # Config indicated by + and applies to all files under models/example/
     +materialized: table
-    example:
-      +materialized: view
